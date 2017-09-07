@@ -1,0 +1,5 @@
+{% extends "./page.html" %}
+
+{% block body %}
+<div id="pdf-header" class="pdf-header"><small style="color: red">MADE IN A FABLAB WORKSHOP</small> <div style="float: right; text-align: right">{{ page.title }}&nbsp;</span> <span class="header-pages-count sub"></div></div><script>if ({{ page.num }} == {{ config.totalpages }}) document.getElementById('pdf-header').style.display = 'none'</script>
+{% endblock %}
